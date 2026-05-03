@@ -1,0 +1,47 @@
+{
+  "name": "@amlhubs/iso-24617-2",
+  "version": "0.0.1",
+  "description": "ISO 24617-2:2020 (2nd ed) Semantic Annotation Framework Part 2 — Dialogue Acts (DiAML). TypeScript metaclasses for the 9 standardised dialogue dimensions, communicative functions, functional segments, rhetorical relations, and qualifiers, with the triple-layered plug-in mechanism via PackageMerge.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "tsc --noEmit -p tsconfig.test.json",
+    "prepublishOnly": "npm run build"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com",
+    "access": "restricted"
+  },
+  "peerDependencies": {
+    "@amlhubs/uml": "^0.0.2",
+    "@amlhubs/ocl": "^0.0.1",
+    "@amlhubs/sbvr": "^0.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amlhubs/iso-24617-2.git",
+    "directory": "."
+  },
+  "keywords": [
+    "iso-24617-2",
+    "iso-24617-2-2020",
+    "diaml",
+    "dialogue-acts",
+    "semaf",
+    "iso-tc-37",
+    "metamodel",
+    "metaclass",
+    "agentic-modeling-language",
+    "aml",
+    "agenihub"
+  ],
+  "license": "MIT"
+}

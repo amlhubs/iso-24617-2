@@ -1,0 +1,8 @@
+{
+  "extends": "./tsconfig.json",
+  "include": [
+    "index.ts",
+    "iso-24617-2.ts",
+    "test/**/*.ts"
+  ]
+}
